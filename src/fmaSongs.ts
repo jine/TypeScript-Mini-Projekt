@@ -7,6 +7,7 @@ export interface Song {
     file: string; // Link to the audio file
     cover: string; // Link to the cover image
     fmaLink: string; // Link to the Free Music Archive page
+    favorite?: boolean; // Jim likes this song
 }
 
 // Sample songs data from Free Music Archive (FMA)
@@ -161,6 +162,7 @@ export const Songs: Song[] = [
      duration: "06:13",
      file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/tkIAL5Hmaz1wLjCfwgLAdc6QgmX0XgSbwiX8cXdv.mp3",
      cover: "https://freemusicarchive.org/image/?file=track_image/uVKnZFL4STf5Oe0oJeiGgF9J6v97MvPF2ltpjk91.png&width=290&height=290&type=track",
-     fmaLink: "https://freemusicarchive.org/music/pat102/single/solar-plexus/"
+     fmaLink: "https://freemusicarchive.org/music/pat102/single/solar-plexus/",
+     favorite: true,
    }
  ];
