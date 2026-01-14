@@ -1,0 +1,23 @@
+{
+  "name": "typescript-mini-projekt",
+  "version": "1.0.0",
+  "description": "Välkommen till din första stora TypeScript-utmaning! I den här uppgiften ska du bygga fundamentet till en applikation.",
+  "homepage": "https://github.com/jine/TypeScript-Mini-Projekt#readme",
+  "bugs": {
+    "url": "https://github.com/jine/TypeScript-Mini-Projekt/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jine/TypeScript-Mini-Projekt.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
