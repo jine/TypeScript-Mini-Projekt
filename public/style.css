@@ -15,11 +15,17 @@
 
     --pd: 2rem;
     --pd-sm: 1rem;
+    --pd-xs: 0.5rem;
 
     --gap: 2rem;
     --gap-sm: 1rem;
+    --gap-xs: 0.5rem;
+    --gap-xxs: 0.25rem;
 
     --border-radius: 1rem;
+    --border-radius-xs: 0.5rem;
+    --border-radius-xxs: 0.25rem;
+    
 
     --max-width: 45rem;
 
@@ -75,7 +81,7 @@ p {
     gap: var(--gap);
 
     border: 1px solid var(--clr-border);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-xs);
     padding: var(--pd);
 
     .not-playing {
@@ -90,14 +96,14 @@ p {
     margin: 0;
 
     border: 1px solid var(--clr-border);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-xs);
     padding: var(--pd);
 
     .song-cover {
         display: block;
         width: 100px;
         height: 100px;
-        border-radius: 0.5rem;
+        border-radius: var(--border-radius-xs);
     }
 
     .song-details {
@@ -110,7 +116,7 @@ p {
     .song-meta {
         display: flex;
         flex-direction: column;
-        gap: 0.25rem;
+        gap: var(--gap-xxs);
     }
 
     .play-btn {
@@ -118,7 +124,7 @@ p {
         background-color: var(--clr-primary);
         color: white;
         border: none;
-        border-radius: 0.25rem;
+        border-radius: var(--border-radius-xxs);
         cursor: pointer;
     }
 
