@@ -1,4 +1,4 @@
-// Need export, because we want to import Songs in other files
+// Need export, because we want to use import ... in other files
 export interface Song {
   title: string; // Title of the song
   artist: string; // Name of the artist
@@ -6,7 +6,7 @@ export interface Song {
   file: string; // Link to the audio file
   cover: string; // Link to the cover image
   fmaLink: string; // Link to the Free Music Archive page
-  favorite?: boolean; // Jim likes this song
+  favorite?: boolean; // Jim likes this song, optional
 }
 
 // Sample songs data from Free Music Archive (FMA)

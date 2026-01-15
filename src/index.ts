@@ -1,3 +1,4 @@
+// Get both Songs-array and Songs-itnerface from fmaSongs.js
 import { Songs, type Song } from './fmaSongs.js';
 
 type PlayerStatus = 'playing' | 'paused' | 'stopped';
@@ -149,10 +150,10 @@ function previousSong() {
 // Function to format time in MM:SS format from an seconds-value
 // https://www.programmingbasic.com/convert-seconds-to-minutes-and-seconds-javascript/
 function formatTime(seconds: number): string {
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  
-  return `${mins}:${secs.toString().padStart(2, '0')}`;
+    const mins = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
 }
 
 // Update the played time as song plays
