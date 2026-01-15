@@ -14,22 +14,29 @@
 </head>
 <body>
     <div class="container">
-        <h1>FE25ht - Jim Nelin | Musikspelare</h1>
+        <h1>FE25ht - Jim Nelin | TypeScript Mini Projekt</h1>
 
-        <p>Nedan finns en musikspelare där du kan lyssna på musik från Free Music Archive. Allt spelas upp direkt i webbläsaren med hjälp av moderna webbtekniker som TypeScript och HTML5. Detta är ett projekt från FE25ht-kursen i TypeScript och webbutveckling.</p>
+        <p>Nedan finns en musikspelare där du kan lyssna på musik från <a href="https://freemusicarchive.org">Free Music Archive</a>. Allt spelas upp direkt i webbläsaren med hjälp av moderna webbtekniker som TypeScript och HTML5. Detta är ett projekt från FE25ht-kursen i TypeScript och webbutveckling.</p>
         <p>Välj en låt från spellistan nedan för att börja spela! Klicka på play-knappen bredvid varje låt för att starta uppspelningen.</p>
 
-        <!-- Music player App -->
+        <!-- Music App -->
         <div id="app" class="app">
             <!-- App content will be dynamically added here -->
             <div class="not-playing">Inget spelas upp just nu...</div>
+        </div>
+
+        <!-- Timeline/Progress Bar -->
+        <div class="timeline-container">
+            <div class="current-time">0:00</div>
+            <input type="range" id="progress-bar" class="progress-bar" min="0" max="100" value="0">
+            <div class="total-time">0:00</div>
         </div>
 
         <!-- App controls -->
         <div class="app-controls" class="app-controls">
             <i class="fas fa-backward" id="backward"></i>
             <i class="fas fa-play-circle" id="play"></i>
-            <i class="fas fa-pause-circle" id="pause"></i>
+            <i class="fas fa-pause-circle paused" id="pause"></i>
             <i class="fas fa-forward" id="forward"></i>
             <!--
             <i class="fas fa-random" id="shuffle"></i>

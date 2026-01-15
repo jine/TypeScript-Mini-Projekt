@@ -21,6 +21,23 @@ export const Songs: Song[] = [
       fmaLink: "https://freemusicarchive.org/music/yurasoop/single/dark-ambient/"
     },
    {
+     title: "Solar Plexus",
+     artist: "pat102",
+     duration: "06:13",
+     file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/tkIAL5Hmaz1wLjCfwgLAdc6QgmX0XgSbwiX8cXdv.mp3",
+     cover: "https://freemusicarchive.org/image/?file=track_image/uVKnZFL4STf5Oe0oJeiGgF9J6v97MvPF2ltpjk91.png&width=290&height=290&type=track",
+     fmaLink: "https://freemusicarchive.org/music/pat102/single/solar-plexus/",
+     favorite: true,
+   },
+   {
+     title: "Clouds (Ambient Background Music)",
+     artist: "Alex Productions",
+     duration: "02:45",
+       file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/YqAtDTM2Mg7ZNSH6tK8HHHmevFHzjIpz1NxHPrlw.mp3",
+      cover: "https://freemusicarchive.org/image/?file=track_image/hSlrKDPxvoW3vt2iG0A03R1vKzCXicZayjKozjKQ.jpg&width=290&height=290&type=track",
+     fmaLink: "https://freemusicarchive.org/music/alex-productions/single/ambient-background-music-clouds/"
+   },
+   {
       title: "Beautiful Ambient",
       artist: "YuraSoop",
       duration: "02:10",
@@ -108,14 +125,6 @@ export const Songs: Song[] = [
      cover: "https://freemusicarchive.org/image/?file=track_image/ABkSACDcsHpp767VY36jBZENi9m8HlXS7oqJSFCG.png&width=290&height=290&type=track",
      fmaLink: "https://freemusicarchive.org/music/1000-handz/cc-by-free-to-use-melodic-rap-instrumentals/transmission/"
      },
-   {
-     title: "Clouds (Ambient Background Music)",
-     artist: "Alex Productions",
-     duration: "02:45",
-       file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/YqAtDTM2Mg7ZNSH6tK8HHHmevFHzjIpz1NxHPrlw.mp3",
-      cover: "https://freemusicarchive.org/image/?file=track_image/hSlrKDPxvoW3vt2iG0A03R1vKzCXicZayjKozjKQ.jpg&width=290&height=290&type=track",
-     fmaLink: "https://freemusicarchive.org/music/alex-productions/single/ambient-background-music-clouds/"
-   },
     {
       title: "Rainy Night Hong Kong T1",
       artist: "Marcelo Bourdieu",
@@ -155,14 +164,5 @@ export const Songs: Song[] = [
      file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/kM6DxXK3pNKCVqemtvA4p1ZrAou88VKzrhrFnr1W.mp3",
      cover: "https://freemusicarchive.org/index.php/image/?file=track_image/DBMPntQYReHwcicBO2mJNfwNm0cnJAdTC5SzzK9d.jpg&width=290&height=290&type=track",
      fmaLink: "https://freemusicarchive.org/index.php/music/amarent/free-ambient-music/a-better-world/"
-   },
-   {
-     title: "Solar Plexus",
-     artist: "pat102",
-     duration: "06:13",
-     file: "https://files.freemusicarchive.org/storage-freemusicarchive-org/tracks/tkIAL5Hmaz1wLjCfwgLAdc6QgmX0XgSbwiX8cXdv.mp3",
-     cover: "https://freemusicarchive.org/image/?file=track_image/uVKnZFL4STf5Oe0oJeiGgF9J6v97MvPF2ltpjk91.png&width=290&height=290&type=track",
-     fmaLink: "https://freemusicarchive.org/music/pat102/single/solar-plexus/",
-     favorite: true,
    }
  ];

@@ -80,18 +80,49 @@ p {
     flex-direction: column;
     gap: var(--gap);
 
-    border: 1px solid var(--clr-border);
-    border-radius: var(--border-radius-xs);
-    padding: var(--pd);
 
+    /* msg when not playing */
     .not-playing {
+        padding: var(--pd);
         margin: 0 auto;
         font-style: italic;
+    }
+
+    .now-playing {
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+        padding: var(--pd-sm);
+        background: var(--clr-background);
+        border-radius: var(--border-radius-xs);
+        border: 1px solid var(--clr-border);
+    }
+
+    .now-playing-cover {
+        width: 250px;
+        height: 250px;
+        border-radius: var(--border-radius);
+        object-fit: cover;
+        border: 10px solid var(--clr-border);
+    }
+
+    .now-playing-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: var(--gap-xs);
+    }
+
+    .now-playing-artist {
+        color: var(--clr-muted);
+    }
+
+    .now-playing-duration {
+        color: var(--clr-muted);
+        margin-top: var(--gap);
     }
 }
 
 .app-playlist {
-    list-style: none;
     padding: 0;
     margin: 0;
 
@@ -111,6 +142,7 @@ p {
         align-items: center;
         justify-content: space-between;
         gap: var(--gap-sm);
+        
     }
 
     .song-meta {
@@ -119,18 +151,19 @@ p {
         gap: var(--gap-xxs);
     }
 
+
     .play-btn {
         padding: var(--pd-sm);
         background-color: var(--clr-primary);
         color: white;
         border: none;
-        border-radius: var(--border-radius-xxs);
+        border-radius: var(--border-radius-xs);
         cursor: pointer;
     }
 
     .song-container {
         display: grid;
-        grid-template-columns: 100px 1fr;
+        grid-template-columns: 100px 1fr; /* cover 100px, rest song info */
         gap: var(--gap-sm);
         padding: var(--pd-sm);
         border-bottom: 1px solid var(--clr-border);
@@ -148,23 +181,53 @@ p {
 
 }
 
+.timeline-container {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+}
+
+.progress-bar {
+    flex: 1; /* grow to contaner width */
+    height: 1px;
+    background: var(--clr-primary);
+    cursor: pointer;
+    appearance: none;
+}
+
+.current-time, .total-time {
+    color: var(--clr-muted);
+}
+
 .app-controls {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
-    font-size: 2rem; 
-    color: #444; 
+    align-items: center;
+    font-size: 2rem;
+    color: #444;
 
     i {
-        cursor: pointer; 
+        cursor: pointer;
 
         &:hover {
             color: #000;
-            transition: color 0.5s; 
+            transition: color 0.5s;
         }
     }
 
     .playing {
         color: var(--clr-playing);
-        animation: pulse 1s infinite;
+        transition: color 0.5s;
+        &:hover {
+            color: var(--clr-playing);
+        }
+    }
+
+    .paused {
+        color: var(--clr-playing);
+        &:hover {
+            color: var(--clr-playing);
+        }
     }
 }
+
