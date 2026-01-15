@@ -103,7 +103,7 @@ p {
         height: 250px;
         border-radius: var(--border-radius);
         object-fit: cover;
-        border: 10px solid var(--clr-border);
+        border: 8px solid var(--clr-border);
     }
 
     .now-playing-title {
