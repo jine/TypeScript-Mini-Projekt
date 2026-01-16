@@ -81,7 +81,7 @@ function togglePause() {
 }
 
 // i is the index (from 0) in the Song-object
-// Fetches the URL and adds it to global audio obj and .plays() it
+// Fetches the URL from Song[i] and plays it on *global* audio obj
 function playSong(i: number) {
 
     // Validate index
@@ -165,6 +165,7 @@ function timeUpdate() {
     //audio.currentTime = Current pos as sec
     //audio.duration = Song length in sec
     
+    // audio.duration returns a value when it's loaded
     if (audio.duration) {
         const progress = (audio.currentTime / audio.duration) * 100; 
         progressBar.value = progress.toString();
@@ -175,7 +176,7 @@ function timeUpdate() {
 }
 
 // Seek to position when progress bar is changed
-// Got a bit of help from AI on this one
+// Thanks Grok for the suggestion
 function changePos(input: Event) {
     const target = input.target as HTMLInputElement; // The <input range element
 
