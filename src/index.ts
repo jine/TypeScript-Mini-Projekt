@@ -157,6 +157,7 @@ function formatTime(seconds: number): string {
 }
 
 // Update the played time as song plays
+
 function timeUpdate() {
     
     // https://stackoverflow.com/questions/11203773/how-can-i-get-the-html5-audios-duration-time
@@ -167,6 +168,8 @@ function timeUpdate() {
     
     // audio.duration returns a value when it's loaded
     if (audio.duration) {
+
+        // progress = calculate the percentage (0-100)
         const progress = (audio.currentTime / audio.duration) * 100; 
         progressBar.value = progress.toString();
 
